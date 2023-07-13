@@ -93,29 +93,91 @@ public class Conditionals {
     switch (dayOfWeek) {// check if value equal to the following cases
       case 1:
         dayName = "Monday";
-        break; //exit
+        break; // exit
       case 2:
         dayName = "Tuesday";
-        break; //exit
-      case 3: 
+        break; // exit
+      case 3:
         dayName = "Wednesday";
-        break; //exit
+        break; // exit
       case 4:
         dayName = "Thursday";
-        break; //exit
+        break; // exit
       case 5:
         dayName = "Friday";
-        break; //exit
+        break; // exit
       case 6:
         dayName = "Saturday";
-        break; //exit
+        break; // exit
       case 7:
         dayName = "Sunday";
-        break; //exit
-        //default
+        break; // exit
+      // default
 
     }
     System.out.println("Today is " + dayName);
- 
+
+    int dayOfWeek2 = 3;
+    String dayName2 = "";
+    switch (dayOfWeek2) { // expresssion
+      // check if value equal to the following cases
+      case 1:
+        dayName2 = "Monday";
+        System.out.println(1);
+      case 2:
+        dayName2 = "Tuesday";
+        System.out.println(2);
+      case 3:
+        dayName2 = "Wednesday";
+        System.out.println(3);
+      case 4:
+        dayName2 = "Thursday";
+        System.out.println(4);
+      case 5:
+        dayName2 = "Friday";
+        System.out.println(5);
+      case 6:
+        dayName2 = "Saturday";
+        System.out.println(6);
+      case 7:
+        dayName2 = "Sunday";
+        System.out.println(7);
+    }
+    System.out.println("Today is " + dayName2);
+    // default
+
+    int colorChoose = 2;
+    String colorName = "";
+    switch (colorChoose) {
+      case 1:
+        colorName = "Blue";
+        break;
+      case 2:
+        colorName = "Red";
+        break;
+      case 3:
+        colorName = "Green";
+        break;
+    }
+    System.out.println(colorName);
+
+    char grade2 = 'B';
+    int pocketMoney = 0;
+    switch (grade2) {
+      case 'A':
+        pocketMoney += 100;
+        break;
+      case 'B':
+        pocketMoney += 70;
+        break;
+      case 'C':
+        pocketMoney += 20;
+        break;
+      case 'D':
+        pocketMoney += 5;
+        break;
+    }
+    System.out.println("pocketMoney = " + pocketMoney);
+
   }
 }
