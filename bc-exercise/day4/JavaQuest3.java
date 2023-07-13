@@ -5,21 +5,17 @@ public class JavaQuest3 {
   /**
    * Expected Output of Examples:
    * 
-   * Input a month number: 2
-   * Input a year: 2016
-   * February 2016 has 29 days
+   * Input a month number: 2 Input a year: 2016 February 2016 has 29 days
    * 
-   * Input a month number: 12
-   * Input a year: 2014
-   * December 2014 has 31 days
+   * Input a month number: 12 Input a year: 2014 December 2014 has 31 days
    */
   // Program toExercise3Ansumber of days that the month of a year has.
 
-public static void main(String[] args) {
-  
+  public static void main(String[] args) {
+
 
     Scanner input = new Scanner(System.in);
-    
+
     int number_Of_DaysInMonth = 0;
     String MonthOfName = "Unknown";
 
@@ -29,19 +25,20 @@ public static void main(String[] args) {
     System.out.print("Input a year: ");
     int year = input.nextInt();
     input.close();
-    
+
     // Complete the switch statement
     switch (month) {
       case 1:
-        MonthOfName = "Janarnury";
+        MonthOfName = "January";
         number_Of_DaysInMonth = 31;
         break;
       case 2:
         MonthOfName = "February";
         boolean LeapYear = year % 4 == 0 && year % 100 != 0 || year % 400 == 0;
-        if (LeapYear){
+        if (LeapYear) {
           number_Of_DaysInMonth = 29;
-        } else{number_Of_DaysInMonth = 28;
+        } else {
+          number_Of_DaysInMonth = 28;
         }
         break;
       case 3:
@@ -65,15 +62,15 @@ public static void main(String[] args) {
         number_Of_DaysInMonth = 31;
         break;
       case 8:
-        MonthOfName = "Angus";
+        MonthOfName = "Angust";
         number_Of_DaysInMonth = 31;
         break;
       case 9:
-        MonthOfName = "Sepetember";
+        MonthOfName = "September";
         number_Of_DaysInMonth = 30;
         break;
       case 10:
-        MonthOfName = "Octocber";
+        MonthOfName = "October";
         number_Of_DaysInMonth = 31;
         break;
       case 11:
@@ -84,11 +81,11 @@ public static void main(String[] args) {
         MonthOfName = "December";
         number_Of_DaysInMonth = 31;
         break;
-        // Leap Year -> 29 days in February, otherwise 28.
-        // Definition: If a year is divisible by 4, and Not divisible by 100, OR
-        // divisible by 400.
-        
-        // Complete the other months
+      // Leap Year -> 29 days in February, otherwise 28.
+      // Definition: If a year is divisible by 4, and Not divisible by 100, OR
+      // divisible by 400.
+
+      // Complete the other months
     }
     System.out.println(MonthOfName + " " + year + " has " + number_Of_DaysInMonth + " days");
 
