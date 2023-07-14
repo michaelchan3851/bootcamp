@@ -31,7 +31,7 @@ public class Loops {
     int count = 0;
     for (int i = 0; i < max; ++i) {
       count += i; // 0, 1 ... 9
-      System.out.println(count); // 45
+      System.out.println("count=" +count); // 45
     }
     // count=?
 
@@ -126,19 +126,41 @@ public class Loops {
       // i = 3, j = 2, Hello
       // i = 3, j = 3, Exit
 
-    for (int i = 0; i < 5; i++) {
-      System.out.println(args);("1");
-      for (int j = 0; j <5 ;j++){
-        System.out.print("2");
-      } 
-    }
-  }
+    // *
+    // **
+    // ***
+    // ****
+    // *****
+    // System.out.println; -> nextline after print out
+    // System.out.print() is not allowed
 
-  // *
-  // **
-  // ***
-  // ****
-  // *****
-  // System.out.println; -> nextline after print out
-  // System.out.print() is not allowed
+    // Approach 1: Nexted Loop
+    // System.out.println() & System.out.print()
+    for (int i = 0; i < -5; i++) {
+      for (int j = 0; j < i + 1; j++) {
+        System.out.print("*");
+      }
+      System.out.println("");
+    }
+
+    // Approach 2: Single Loop & String
+    // System.out.println()
+    String str = "";
+    for (int i = 0; i < 5; i++) {
+      str += "*";
+      System.out.println(str);
+    }
+
+    // Approach 3: Nested Loop & String
+    // System.out.println()
+    str = "";
+    for (int i = 0; i < 5; i++) {
+      str = "";
+      for (int j = 0; j < i + 1; j++) {
+        str += "*";
+      }
+      System.out.println(str);
+    }
+
+  }
 }

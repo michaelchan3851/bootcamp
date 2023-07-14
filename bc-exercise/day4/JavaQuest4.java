@@ -22,8 +22,6 @@ public class JavaQuest4 {
     // 3. > 0
     int count = 0;
 
-    System.out.println(count);
-
     for (int i = 0; i < 100; i++) { // You cannot change this line
 
       boolean isNum = i % 2 == 0 && i % 3 == 0 && i > 0;
