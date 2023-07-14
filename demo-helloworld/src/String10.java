@@ -21,6 +21,7 @@ public class String10 {
     System.out.println(areTheyEqual);
     System.out.println(areTheyEqual2);
     System.out.println(b4);// true = abcd = abc+d
+    // String please use equals
 
     //chatAt(2), find the char at index 2 of the string
     String str4 = "Helloworld";

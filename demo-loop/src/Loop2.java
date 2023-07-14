@@ -50,15 +50,56 @@ public class Loop2 {
     // Print the index of the first occurrence of the character 'e'
     // first time of the character 'e'
     // str.charAt(int index)
+    System.out.println(str.charAt(2)); // l, the 3rd character in the String
 
     for (int i = 0; i < str.length(); ++i) {
-      if (str.charAt(i) == 'e') {
+      if (str.charAt(i) == 'e') { // true /false
         System.out.println("the index of the first occurrence of the character 'e' is " + i);
         break;
       }
-
-      
     }
+
+    // check if 'y'exists in the string
+    // Found or Not Found
+
+    boolean found = false;
+    for (int i = 0; i < str.length(); ++i) {
+      if (str.charAt(i) == 'y') {
+        found = true;
+        break;
+      }
+    }
+    if (found == true) { // true /false
+      System.out.println("Found");
+
+    } else {
+      System.out.println("Not Found");
+
+    }
+
+    // if the number of occurrence of target >= 3. print Yes
+    // otherwise, print No
+    int count = 0;
+    char target = 'o';
+    boolean bonus = false;
+    for (int i = 0; i < str.length(); ++i) {
+      if (str.charAt(i) == target) {
+        count++; // keypoint1 count
+      }
+      // nice to have
+      if (count >= 3) { //keypoint2 count in boolean
+        bonus = true;
+        break;
+      }
+    }
+    if (bonus == true) {
+      System.out.println("Yes");
+    } else {
+      System.out.println("No");
+    }
+
+
   }
 }
+
 // here
