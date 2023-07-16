@@ -23,9 +23,9 @@ public class Loops {
       System.out.println("Hello world");
     }
 
-    for (int i = 0; i < 0; i++) {// NOT applied, NOT executed
-      System.out.println("v");
-    }
+    //for (int i = 0; i < 0; i++) {// NOT applied, NOT executed
+      //System.out.println("v");
+    //}
 
     int max = 10;
     int count = 0;
