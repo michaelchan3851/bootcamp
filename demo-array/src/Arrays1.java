@@ -1,4 +1,6 @@
-public class Arrays {
+import java.util.Arrays;
+
+public class Arrays1 {
     public static void main(String[] args) {
         int num = 7;
         int num2 = 8;
@@ -86,7 +88,7 @@ public class Arrays {
         fruits[2] = "orange";
         // null
         // null
-        // System.out.println(Arrays.toString(fruits)); question
+        System.out.println(Arrays.toString(fruits)); //question
         // [apple,watermelon, orange, null, null]
 
         byte[] bytes = new byte[6];
