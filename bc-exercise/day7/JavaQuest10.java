@@ -33,7 +33,6 @@ public class JavaQuest10 {
 
     if (indexPosition == my_array.length) {
       System.out.println("New Array: " + Arrays.toString(my_array));
-      return;
     }
 
     // code here
