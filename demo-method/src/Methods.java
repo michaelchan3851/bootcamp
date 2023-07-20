@@ -8,11 +8,12 @@ public class Methods {
     public static int sum(int a, int b) { // input + output
         // left int = return type
         // the int inside the bracket are parameters
-        int c = a + b;
-        return c;
+        // int c = a + b;
+        // return c;
+        return a + b;
     }
 
-    public static double subtract(int x, int y) { //implicit from int -> double
+    public static double subtract(int x, int y) { // implicit from int -> double
         return x - y; // execute x - y first, then return the result
     }
 
@@ -52,7 +53,7 @@ public class Methods {
         // call method2
         method2("hello"); // print String=hello
         method2("Github"); // print String=Github
-        method2(""); //returned
+        method2(""); // returned
 
         double circleArea = 5 * 5 * pi();
         System.out.println("circle area=" + circleArea);

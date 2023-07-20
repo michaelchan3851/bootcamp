@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class Swap {
   public static void main(String[] args) {
     int[] arr = new int[] { 100, -400, 3, 99 };
@@ -6,6 +8,7 @@ public class Swap {
     int temp = arr[0]; // backup
     arr[0] = arr[arr.length - 1];
     arr[arr.length - 1] = temp;
+    System.out.println(Arrays.toString(arr));
 
     // int arrMaxIndex = arr[arr.length - 1];
     // int arrMinIndex = arr[0];

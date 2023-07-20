@@ -11,12 +11,13 @@ public class SearchArray {
         System.out.println("index=" + i);
       }
     }
+
     // toCharArray()
     String str = "I am a boy."; // 11 characters
     char[] arr = str.toCharArray();// length 11
     // System.out.println(arr[11]);// error
 
-    System.out.println(Arrays.toString(arr));
+     System.out.println(Arrays.toString(arr));
     // [I, , a, m, , a , , b, o, y, .]
 
     // Find Max. value in the array

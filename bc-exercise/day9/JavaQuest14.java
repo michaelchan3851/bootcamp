@@ -40,12 +40,11 @@ public class JavaQuest14 {
   // false
   public static boolean palindrome(int num) {
     String str = "" + num;
-    for(int i= 0;i<str.length();i++){
-      if(str.charAt(i) != str.charAt(str.length()-1-i)){
+    for (int i = 0; i < str.length(); i++) {
+      if (str.charAt(i) != str.charAt(str.length() - 1 - i)) {
         return false;
       }
-    }return true;
-
     }
-
+    return true;
+  }
 }

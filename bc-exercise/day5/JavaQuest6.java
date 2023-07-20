@@ -19,4 +19,4 @@ public class JavaQuest6 {
   }
 }
 //a=1, b=1,a+b= sum ->show result a
-//a->b , b->sum , ,  ->print result a
+//b->a , sum->b , ,  ->print result a

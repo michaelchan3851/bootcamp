@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class InsertionSort {
   public static void main(String[] args) {
-    // [ 5, 1, 4, 2, 8]
+    // [ 5, 1, 4, 8, 2]
     // step1.1: [1, 5, 4, 8, 2] (insert 1 to arr[0], 1 < 5)
     // After round 1, [1, 5] is sorted
     // step2.1 Compare 4 < 5
@@ -10,27 +10,16 @@ public class InsertionSort {
     // After round 2, [1, 4, 5] is sorted
     // ...
     int[] nums = new int[] { 5, 1, 4, 8, 2 };
-    System.out.println("step" + Arrays.toString(sort(nums)));
-  }
-
-  public static int[] sort(int[] arr) {
-    int[] temp1 = new int[arr.length];
-    int temp;
-    for (int i = 0; i < arr.length; i++) {
-      for (int j = 0, k = 0; j < arr.length; j++) {
-        if (arr[j] > arr[j + 1]) {
-          if (k == j + 1) {
-            temp1[k++] = arr[j];
-          }
-          if (j != arr.length - 1 || j + 1 == arr.length) {
-            temp1[k++] = arr[j];
-          }
-        }
+    for (int i = 1; i < nums.length; i++) {
+      int current = nums[i];
+      int j = i - 1;
+      while (j >= 0 && nums[j] > current) {
+        nums[j + 1] = nums[j];
+        j--;
       }
+      nums[j + 1] = current;
+      System.out.println("step" + i +"."+j + Arrays.toString((nums)));
     }
-    arr = temp1;
-
-    return arr;
+    System.out.println("step" + Arrays.toString((nums)));
   }
-
 }
