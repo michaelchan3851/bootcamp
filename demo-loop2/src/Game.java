@@ -26,18 +26,18 @@ public class Game {
       System.out.println("Please input a number (" + min + " - " + max + "):");
       input = scanner.nextInt();
 
-      if (input > max || input < min) {
+      if (input < min || input > max) {
         System.out.println("Input number should not be out of the range");
       } else {
         if (input > bomb) {
           max = input - 1;
-        } else {
+        } else if(input < bomb){
           min = input + 1;
         }
         // System.out.println("Please input a number (" + min + " - " + max + ")");
       }
     } while (bomb != input);
     System.out.println("Bomb!");
-
+    scanner.close();
   }
 }
