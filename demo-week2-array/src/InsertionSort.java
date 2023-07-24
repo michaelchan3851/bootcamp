@@ -18,13 +18,16 @@ public class InsertionSort {
         j--;
       }
       nums[j + 1] = current;
-      System.out.println("step" + i +"."+j + Arrays.toString((nums)));
+      System.out.println("step" + i + "." + j + Arrays.toString((nums)));
     }
     System.out.println("step" + Arrays.toString((nums)));
 
-    for (int i = 1; i < nums.length; i++){
+    for (int i = 1; i < nums.length; i++) {
       int j, key;
-      int nums[key] = nums[i];
+      for (i = 0; i < nums.length; i++) {
+        key = nums[i];
+
+      }
 
     }
   }

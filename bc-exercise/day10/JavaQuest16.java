@@ -33,12 +33,22 @@ public class JavaQuest16 {
     System.out.println("Output:" + Arrays.toString(nums3));
   }
 
-
-
   // Code a method to return int[].
   // 1. All values in this array sum up to Zero.
   // 2. The length of array = n
   // 3. The values in the array has to be unique
+
+  // when n= 1,[0]
+  // when n= 2,[2,-2]
+  // when n= 3,[0,1,-1]
+  // when n= 4,[4,-4,3,-3]
+  // when n= 5,[0,1,-1,2,-2]
+
+  // when n= 1,Output:[0]
+  // when n= 2,Output:[1, -1]
+  // when n= 3,Output:[1, 0, -1]
+  // when n= 4,Output:[-2, 1, -1, 2]
+  // when n= 5,Output:[1, 2, 0, -2, -1]
   public static int[] sumToZero(int n) {
     int[] arr = new int[n];
     int i = 0;
