@@ -88,15 +88,44 @@ public class Loops {
         System.out.println(star);
       }
     }
-
-    // *
+   // *
     // **
     // ***
     // ****
     // *****
-    // System.out.println(); -> nextline after print out
+    // System.out.println; -> nextline after print out
     // System.out.print() is not allowed
-    // Tips: String
+
+    // Approach 1: Nexted Loop
+    // System.out.println() & System.out.print()
+    for (int i = 0; i < -5; i++) {
+      for (int j = 0; j < i + 1; j++) {
+        System.out.print("*");
+      }
+      System.out.println("");
+    }
+
+    // Approach 2: Single Loop & String
+    // System.out.println()
+    String str = "";
+    for (int i = 0; i < 5; i++) {
+      str += "*";
+      System.out.println(str);
+    }
+
+    // Approach 3: Nested Loop & String
+    // System.out.println()
+    str = "";
+    for (int i = 0; i < 5; i++) {
+      str = "";
+      for (int j = 0; j < i + 1; j++) {
+        str += "*";
+      }
+      System.out.println(str);
+    }
 
   }
 }
+
+
+

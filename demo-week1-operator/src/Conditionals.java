@@ -67,7 +67,7 @@ public class Conditionals {
       grade = 'F';
     }
     // grade ?
-    System.out.println("your grade is " + grade);
+    System.out.println("your grade is " + grade); //B
 
     // good version
     int age = 65;
@@ -82,7 +82,7 @@ public class Conditionals {
     int age2 = 65;
 
     if (age2 >= 65) {
-      System.out.println("yes he is elderly");
+      System.out.println("yes he is elderly");//yes
     }
 
     // switch
@@ -113,9 +113,8 @@ public class Conditionals {
         dayName = "Sunday";
         break; // exit
       // default
-
     }
-    System.out.println("Today is " + dayName);
+    System.out.println("Today is " + dayName); //Today is Wednesday
 
     int dayOfWeek2 = 3;
     String dayName2 = "";
@@ -143,7 +142,7 @@ public class Conditionals {
         dayName2 = "Sunday";
         System.out.println(7);
     }
-    System.out.println("Today is " + dayName2);
+    System.out.println("Today is " + dayName2); //Today is Sunday, because no break
     // default
 
     int colorChoose = 2;
@@ -159,7 +158,7 @@ public class Conditionals {
         colorName = "Green";
         break;
     }
-    System.out.println(colorName);
+    System.out.println(colorName); //red
 
     char grade2 = 'B';
     int pocketMoney = 0;
@@ -177,7 +176,7 @@ public class Conditionals {
         pocketMoney += 5;
         break;
     }
-    System.out.println("pocketMoney = " + pocketMoney);
+    System.out.println("pocketMoney = " + pocketMoney);//pocketMoney = 70
 
   }
 }

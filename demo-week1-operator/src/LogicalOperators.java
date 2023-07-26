@@ -61,14 +61,6 @@ public class LogicalOperators{
     // 7 * 6 -> 42, x become 7
     System.out.println(result17);
     System.out.println("x=" + x);
-
-    
-
-
-
-
-
-
   }
 }
   

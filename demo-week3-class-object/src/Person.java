@@ -2,8 +2,8 @@ public class Person { // template
     // class -> 文件
     // only one public class
     // Describle the person by attributes
-    int age;
-    char gender; // week 6 -> ENUM
+    private int age;
+    private char gender; // week 6 -> ENUM
 
     // setter
     public void setAge(int age) { //
@@ -22,8 +22,6 @@ public class Person { // template
     public int getGender() {
         return this.gender;
     }
-
- 
 
     public static boolean isMale(char gender) { // belongs to class
         if (gender == 'F') {
@@ -72,7 +70,5 @@ public class Person { // template
         computer2.setColor("Black");
         computer2.getColor(); // -> Black
         
-
-
     }
 }

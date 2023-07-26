@@ -61,26 +61,29 @@ public class ForEach {
         }
 
         // 2. to CharArray()
-        // int count = 0;
-        // char[] chars2 = s2.toCharArray();
-        // for (int i = 0; i < s2.length(); i++) {
-        // if (chars2[i] == ' ') {
-        // count++;
-        // }
-        // }
-        // count = count++;
-        // String[] str = new String[count];
+        int count = 0;
+        char[] chars2 = s2.toCharArray();
+        for (int i = 0; i < s2.length(); i++) {
+            if (chars2[i] == ' ') {
+                count++;
+            }
+        }
 
-        // count = 0;
-        // for (int i = 0; i < str.length - 1; i++) {
-        // if (chars2[i] == ' ') {
-        // count++;
-        // } else {
-        // str[count] += chars2[i];
-        // }
-        // }
+        String[] str = new String[count + 1];
+
+        count = 0;
+        int startindex = 0;
+        for (int i = 0; i < chars2.length; i++) {
+            if (chars2[i] == ' ') {
+                str[startindex] = s2.substring(startindex, i);
+                startindex = i + 1;
+            } else if(i == chars2.length - 1) {
+                str[startindex] = s2.substring(startindex, i + 1);
+            }
+        }
+        //System.out.println(Arrays.toString(str));
+
         System.out.println(Arrays.toString(split(s2)));
-
     }
 
     public static String[] split(String s) {

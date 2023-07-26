@@ -1,8 +1,11 @@
 public class Car {
-  int noOfWheel; // 0
-  int capacity; // 0
-  String color; // null
+  //Instance Variables (Instance -> Object)
+  // Member Variables
+  private int noOfWheel; // 0
+  private int capacity; // 0
+  private String color; // null
 
+  //Empty Constructor
   public Car(){
     this.noOfWheel = 0;
     this.capacity = 0;

@@ -39,5 +39,10 @@ public class Demo {
     str.charAt(1);
     System.out.println(str); // Hello
 
+    person.setAge(15);
+    person.getAge(); // 15
+
+    Student student = new Student("Eric", "Lau", 30);
+    System.out.println(student.fullName()); // Eric Lau
   }
 }
