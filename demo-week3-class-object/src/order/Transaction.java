@@ -1,13 +1,16 @@
 package order;
+
 public class Transaction {
 
   private int itemNo;
 
-  private ItemDesc itemDesc; // 
+  private ItemDesc itemDesc; //
 
   private int quantity;
 
   private double unitPrice;
+
+  // private double discount;
 
   public Transaction() {
 
@@ -21,11 +24,9 @@ public class Transaction {
   }
 
   // getSubtotal(), no new attribute
-  public double getSubtotal(){
+  public double getSubtotal() {
     return this.quantity * this.unitPrice;
-      
-    }
-  
+  }
 
   public void setItemNo(int itemNo) {
     this.itemNo = itemNo;

@@ -1,3 +1,5 @@
+import shape.Circle;
+
 public class Demo {
   public static void main(String[] args) {
     Car car = new Car(); // empty constructor
@@ -44,5 +46,8 @@ public class Demo {
 
     Student student = new Student("Eric", "Lau", 30);
     System.out.println(student.fullName()); // Eric Lau
+
+    // Circle c = new Circle();
+    // System.out.println(c.pi);
   }
 }

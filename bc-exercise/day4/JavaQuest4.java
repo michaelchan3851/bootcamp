@@ -32,8 +32,6 @@ public class JavaQuest4 {
           break;
         }
       }
-
     }
-
   }
 }

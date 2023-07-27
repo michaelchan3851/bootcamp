@@ -2,7 +2,9 @@ package order;
 
 public class Order {
 
-  private Transaction[] transactions;
+  private Transaction[] transactions; // items
+
+  // private double total;
 
   public Order(Transaction[] transactions) {
     // Pass by
@@ -10,13 +12,13 @@ public class Order {
   }
 
   // getTotal() -> sum up subtotal
-  public double setTotal(this.Transaction.getSubtotal()){
-  double total = 0;
+  public double getTotal() {
+    double total = 0;
 
-  for(int i = 0; i < this.Transaction.getSubtotal().length; i++){
-  total[i] += this.transactions.getSubtotal();
+    for (int i = 0; i < this.transactions.length; i++) {
+      System.out.println("subtotal=" + transactions[i].getSubtotal());
+      total += this.transactions[i].getSubtotal(); // object.method()
+    }
+    return total;
   }
-  return this;
-}
-  
 }
