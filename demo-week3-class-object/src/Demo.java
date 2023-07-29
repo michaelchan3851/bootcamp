@@ -1,3 +1,5 @@
+import car.Car;
+import car.CarFactory;
 import shape.Circle;
 
 public class Demo {
