@@ -21,19 +21,16 @@ public class JavaQuest26 {
 
   public static int sum(int[] nums) {
     // code here
-    int sum = 0;
-    int[] count = new int[100];
-    for (int num : nums) {
-      count[num]++;
-    }
-    for (int i = 0; i < count.length; i++) {
-      System.out.println(count[i]);
-    }
-    for (int i = 0; i < 100; i++) {
-      if (count[i] == 1) {
-        sum += i;
+      int sum = 0;
+      int[] count = new int[101];
+      for (int num : nums) {
+        count[num]++;
       }
+      for (int i = 0; i < 101; i++) {
+        if (count[i] == 1) {
+          sum += i;
+        }
+      }
+      return sum;
     }
-    return sum;
-  }
 }
