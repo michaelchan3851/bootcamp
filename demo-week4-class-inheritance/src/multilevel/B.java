@@ -1,3 +1,4 @@
+package multilevel;
 public class B extends A {
   String str;
 

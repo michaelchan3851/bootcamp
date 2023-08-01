@@ -1,8 +1,8 @@
-package machine;
+package machines;
 public class Keyboard {
   
-  private String buttonType;
-  private int noOfButton;
+   String buttonType;
+   int noOfButton;
 
   public Keyboard(String buttonType, int noOfButton ){
     this.buttonType = buttonType;

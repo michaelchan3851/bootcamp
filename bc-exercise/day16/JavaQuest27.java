@@ -29,10 +29,11 @@ public class JavaQuest27 {
   // Approach 1
   public static boolean isSquare(int num) {
     // code here
-    for(int i = 1 ; i < num; i++){
-      int result = num / i;
-      if(result == i ){
-        return true;
+    for(int i = 1 ; i < 46341; i++){
+      if(num % i == 0){
+        if(num / i == i){
+          return true;
+        }
       }
     }
     return false;

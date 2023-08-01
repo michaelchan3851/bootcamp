@@ -1,9 +1,7 @@
-package machine;
-public abstract class Machine {
+package machines;
+public class Machine {
 
     private double weight;
-
-    double height;
 
     public Machine() {
 

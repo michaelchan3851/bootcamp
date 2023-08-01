@@ -1,4 +1,4 @@
-package machine;
+package machines;
 
 public final class Laptop extends Machine {
   // Laptop is subclass (child), Machine is superclass (parent)
@@ -48,6 +48,7 @@ public final class Laptop extends Machine {
     System.out.println("Laptop Start... ");
   }
 
+  @Override // Methdod Overriding
   public void stop() { // Methdod Overriding
     System.out.println("Laptop Stop... ");
   }
@@ -63,10 +64,12 @@ public final class Laptop extends Machine {
 
   public static void main(String[] args) {
     Laptop laptop = new Laptop("abc", 100, 15, 10);
-    Laptop laptop1 = new Laptop();
     laptop.setWeight(3.0d);
     System.out.println(laptop.getWeigth()); // 3.0);
-    laptop.start(); // Laptop start...
+    laptop.start(); 
+    // machine start... (super())
+    // Laptop start...
+
     laptop.stop(); // Laptop stop...
 
     Machine machine = new Machine(); // weight = 0.0
@@ -85,5 +88,5 @@ public final class Laptop extends Machine {
     System.out.println(Laptop.staticMethod("abc", "def"));// abcdef
     // laptop3.staticMethod("abc", "def"); //abcdef not recommended
   }
-  
+
 }

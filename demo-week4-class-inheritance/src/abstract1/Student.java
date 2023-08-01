@@ -3,9 +3,10 @@ public class Student extends Adult {
   // Must implement abstract method
 
   public Student() {
-    super();
+    super(); // new student
   }
 
+  // Must implement abstract method
   public void sleep() {
     System.out.println("I am student, sleeping");
   }

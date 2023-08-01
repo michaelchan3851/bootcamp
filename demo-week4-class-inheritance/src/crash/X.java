@@ -2,7 +2,7 @@ package crash;
 
 public class X extends Y {
 
-  private String name; //Overriding
+  private String name; //Overriding // learning point
 
   public X(String name) {
     super("John");
