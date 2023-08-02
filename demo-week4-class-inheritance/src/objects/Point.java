@@ -43,5 +43,42 @@ public class Point {
 
     System.out.println(p3.toString()); // objects.Point@3e2
     System.out.println(Points.toString(p3)); // [x=1, y=2]
+
+    Long l = 1L; // 1, unbox -> primitive long
+    int i = 1; // 1, auto-box -> Integer
+    Point.print(10L); // long -> autobox -> Long
+    Point.print(Long.valueOf("10"));
+    // Point.print(10); //cannot convert int to long, compile error
+    Point.print((long) 10); // int -> long -> autobox -> Long
+
+    if (Long.valueOf("100") < 101) {
+      // convert Long 100 -> long 100
+      // 101 -> int
+      // long vs int
+    }
+
+    if (Boolean.valueOf(false) == false) {
+      // right: false -> boolean
+      // left Boolean -> boolean false
+      // boolean vs boolean
+    }
+
+    if (Boolean.valueOf(false).equals(false)) {
+      // right: false -> boolean
+      // left Boolean -> boolean false
+      // boolean vs boolean
+    }
+
+    // unbox Long, and upcast int
+    System.out.println(l == i); // true, finally long vs int
+    // Big bug here
+    Integer i2 = 1;
+    System.out.println(Objects.equals(l, i2)); // false
+    System.out.println(Objects.equals(Long.valueOf(1L), Integer.valueOf(10))); // false
+    l.equals(i); //false
+  }
+
+  public static void print(Long l) {
+    System.out.println("l=" + l);
   }
 }

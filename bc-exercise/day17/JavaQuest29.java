@@ -12,6 +12,7 @@ public class JavaQuest29 {
     System.out.println(separator(0));// $0
     System.out.println(separator(1000));// $1,000
     System.out.println(separator(123987405));// $123,987,405
+    System.out.println(separator(10000));
 
   }
 
@@ -20,10 +21,10 @@ public class JavaQuest29 {
     StringBuilder sb = new StringBuilder();
     String str = Integer.toString(n);
     int Len = str.length();
-    for(int i = 0; i < Len; i++){
+    for (int i = 0; i < Len; i++) {
       sb.append(str.charAt(i));
-      if((Len - i-1) % 3 ==0 && i != Len -1)
-      sb.append(",");
+      if ((Len - i - 1) % 3 == 0 && i != Len - 1)
+        sb.append(",");
     }
     return "$" + sb.toString();
   }

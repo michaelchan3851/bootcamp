@@ -1,5 +1,7 @@
 package machines;
 
+import java.util.Objects;
+
 public final class Laptop extends Machine {
   // Laptop is subclass (child), Machine is superclass (parent)
   // Inherit Machine attribute ("double weight")
@@ -42,6 +44,17 @@ public final class Laptop extends Machine {
     this.monitor = monitor;
   }
 
+  @Override
+  public boolean equals(Object o) {
+    if (this == o)
+      return true;
+    if (!(o instanceof Laptop))
+      return false;
+    Laptop laptop = (Laptop) o;
+    return Objects.equals(laptop.keyboard, this.keyboard)
+        && Objects.equals(laptop.monitor, this.monitor);
+  }
+
   @Override // Methdod Overriding
   public void start() {
     super.start(); // Machine Start...
@@ -66,7 +79,7 @@ public final class Laptop extends Machine {
     Laptop laptop = new Laptop("abc", 100, 15, 10);
     laptop.setWeight(3.0d);
     System.out.println(laptop.getWeigth()); // 3.0);
-    laptop.start(); 
+    laptop.start();
     // machine start... (super())
     // Laptop start...
 

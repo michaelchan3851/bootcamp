@@ -11,11 +11,10 @@ public class Ball { // implicitly
   }
 
   @Override
-  public int hashCode(){
+  public int hashCode() {
     // Hash Code is not unique representation of object reference
     return Objects.hash(this.color);
   }
-
 
   @Override
   public boolean equals(Object o) { // instance method
@@ -25,24 +24,25 @@ public class Ball { // implicitly
     if (!(o instanceof Ball)) //
       return false;
     Ball ball = (Ball) o; // downcast
-    return ball.color.equals(this.color); // true or false
+    // return ball.color.equals(this.color); // true or false
+    return Objects.equals(this.color, ball.color);
   }
 
   @Override
-  public String toString(){
+  public String toString() {
     // Object.toString();
     return "[color=" + this.color //
-    + "]";
+        + "]";
   }
 
   public static void main(String[] args) {
-    Ball b1 = new Ball("Blue"); //address 1
-    Ball b2 = new Ball("Blue"); //address 2
+    Ball b1 = new Ball("Blue"); // address 1
+    Ball b2 = new Ball("Blue"); // address 2
     System.out.println(b1 == b2); // false
     System.out.println((b1.equals(b2)));// checking color, instead of memory address
-    
+
     System.out.println(b1); // [color=Blue]
-    System.out.println(b1.toString()); //[color=Blue]
+    System.out.println(b1.toString()); // [color=Blue]
 
   }
 }
