@@ -7,6 +7,11 @@ public class Dog extends GameMember implements Move {
   public void jump() {
     super.addScore(3);
   }
+  
+  @Override
+  public void bigJump(){
+
+  }
 
   @Override
   public void up() {
@@ -14,11 +19,6 @@ public class Dog extends GameMember implements Move {
     super.addScore(2);
 
     // GameMember.up(this);
-  }
-
-  @Override
-  public void BigJump(){
-
   }
 
   @Override

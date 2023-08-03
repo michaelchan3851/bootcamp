@@ -1,5 +1,4 @@
 public class Cat extends GameMember implements Move{
-  
   // int score = 0;
   String name;
 
@@ -8,11 +7,16 @@ public class Cat extends GameMember implements Move{
     super.addScore(4);
     //GameMember.up(this);
   }
+  
+  @Override
+  public void bigJump() {
+    
+  }
 
   @Override
   public void up() {
-    super.addScore(1);
     System.out.println("Moving up");
+    super.addScore(1);
     //GameMember.up(this);
   }
 

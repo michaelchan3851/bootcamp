@@ -1,25 +1,24 @@
-public class Student extends Person 
-implements Runnable, Swimable, Move { // class signature
+public class Student extends Person
+    implements Runnable, Swimable, Move { // class signature
 
   private String name;
 
   private int score;
-
-  public int getScore(){
-    return this.score;
-  }
-
-
-  @Override
-  public void breath() {
-
-  }
 
   @Override
   public void jump() {
 
   }
 
+  @Override
+  public void bigJump() {
+
+  }
+
+  @Override
+  public void breath() {
+
+  }
 
   // must be override and completed the method
   @Override
@@ -37,23 +36,16 @@ implements Runnable, Swimable, Move { // class signature
     System.out.println(Move.MAX_SPEED); // 10
 
     Move student = new Student();
-    student.up();
-    student.down();
-    student.left();
-    student.right();
+    student.jump();
     // System.out.println(move.MAX_SPEED); //not recommend
 
     Dog dog = new Dog();
-    dog.up();
-    dog.down();
-    dog.left();
-    dog.right();
-    
+    dog.jump();
 
-    System.out.println("score=" +dog.getScore());
+    System.out.println("score=" + dog.getScore()); // score=3
 
     Swimable swimable = new Student();
-    swimable.swim();
+    swimable.swim(); // Student is swimming
 
     Person person = new Student();
     person.breath();
