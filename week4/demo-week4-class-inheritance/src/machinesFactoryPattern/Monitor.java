@@ -1,4 +1,5 @@
-package machines;
+package machinesFactoryPattern;
+
 public class Monitor {
   
   private double length;

@@ -1,5 +1,5 @@
 public class Student extends Person
-    implements Runnable, Swimable, Move { // class signature
+    implements Runnable, Swimable, Move{ // class signature
 
   private String name;
 

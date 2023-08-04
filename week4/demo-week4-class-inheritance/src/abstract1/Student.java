@@ -22,6 +22,5 @@ public class Student extends Adult {
     student.run();
     student.eat();
     System.out.println(student.getAge()); // 0 student object -> Adult object -> person object
-    
   }
 }

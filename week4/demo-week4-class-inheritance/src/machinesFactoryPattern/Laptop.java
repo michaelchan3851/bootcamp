@@ -1,4 +1,4 @@
-package machines;
+package machinesFactoryPattern;
 
 import java.util.Objects;
 

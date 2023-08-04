@@ -1,4 +1,4 @@
-package objects;
+package objectsKey;
 
 import shapes.Circle10;
 import shapes.Shape;

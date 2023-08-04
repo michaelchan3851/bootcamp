@@ -1,4 +1,4 @@
-package machines;
+package machinesFactoryPattern;
 public class Machine {
 
     private double weight;

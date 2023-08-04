@@ -1,4 +1,4 @@
-package objects;
+package objectsKey;
 
 public class Points {
   
