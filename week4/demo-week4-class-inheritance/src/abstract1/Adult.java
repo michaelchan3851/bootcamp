@@ -3,6 +3,7 @@ public abstract class Adult extends Person {
   // abstract class extends abstract class
   // implicitly "exnteds" abstract method
 
+  
   public Adult(){
     super(); //new person
   }
