@@ -26,9 +26,7 @@ public class InsertionSort {
       int j, key;
       for (i = 0; i < nums.length; i++) {
         key = nums[i];
-
       }
-
     }
   }
 }
