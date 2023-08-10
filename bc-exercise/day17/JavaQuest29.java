@@ -4,8 +4,6 @@
 
 0 <= n <= 231 - 1 */
 
-import java.util.Arrays;
-
 public class JavaQuest29 {
   public static void main(String[] args) {
     System.out.println(separator(85));// $85

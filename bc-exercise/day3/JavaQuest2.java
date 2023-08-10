@@ -15,9 +15,9 @@ public class JavaQuest2 {
       System.out.println("a is equals to 9");
     } else if (a < 9 && a >= 0) {
       System.out.println("a is between 0 and 8");
-    } else if (a > 9){
+    } else if (a > 9) {
       System.out.println("a > 9");
-    }else {
+    } else {
       System.out.println("a < 0");
     }
 
@@ -37,7 +37,7 @@ public class JavaQuest2 {
      * then, it is a leap year.
      *
      */
-   
+
     int year1 = 2009;
     boolean isLeapYear1 = year1 % 4 == 0 && year1 % 100 != 0 || year1 % 400 == 0;
     // Program a condition to check if it is a leap year.

@@ -21,8 +21,6 @@
  * 1 <= nums.length <= 100 1 <= nums[i] <= 100 All values in nums are distinct
  */
 
-import java.util.Arrays;
-
 public class JavaQuest40 {
   public static void main(String[] args) {
     System.out.println(findNonMinOrMax(new int[] { 1, 2 })); // -1

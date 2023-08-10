@@ -1,10 +1,12 @@
 package queue1;
 
+import java.util.Deque;
 import java.util.LinkedList;
+
 
 public class DemoQueue {
   public static void main(String[] args) {
-    LinkedList<String> queue = new LinkedList<>();
+    Deque<String> queue = new LinkedList<>();
     // First In First Out
     queue.add("hello");
     queue.add("world");
@@ -20,7 +22,7 @@ public class DemoQueue {
     System.out.println(queue.poll()); // abc
     System.out.println(queue.poll()); // xyz
 
-    System.out.println(queue.add("ijk"));// true, add()
+    System.out.println(queue.offer("ijk"));// true, add()
     System.out.println(queue.offer("abc"));// true, add()
     System.out.println(queue.offer("ijk"));// true, add()
     System.out.println(queue.size());// 3
@@ -38,9 +40,9 @@ public class DemoQueue {
 
     LinkedList<Integer> queueNum = new LinkedList<>(); //Deque
     queueNum.add(10);
-    // queueNum.add(10);
+    queueNum.add(10); // 2nd even number
     queueNum.add(9);
-    queueNum.add(0); // 2nd even number
+    queueNum.add(0); 
     queueNum.add(-3);
     queueNum.add(100);
     // 10, 9, -3, 100
@@ -49,7 +51,7 @@ public class DemoQueue {
     System.out.println("Start");
     int size = queueNum.size(); // 6
     int i = 0;
-    while (i++ < size) { // 0,1,2,3,4,5
+    while (i++ < size) { // 0,1,2,3,4,5 <6
       element = queueNum.poll();
       if (element % 2 == 0 && ++countEven == 2)
         continue;

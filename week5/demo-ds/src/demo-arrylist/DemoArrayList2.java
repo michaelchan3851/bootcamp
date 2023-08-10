@@ -32,7 +32,7 @@ public class DemoArrayList2 {
     for (Object o : objects) {
       if (o instanceof String) {
         String str = (String) o;
-        System.out.println(o);
+        System.out.println(str);
       }
     }
 
@@ -46,7 +46,7 @@ public class DemoArrayList2 {
     List<String> stringList = Arrays.asList(strings);
     //stringList.add("ijk"); //run-time error
 
-    //Read & Write
+    //Read & Write (Solution)
     List<String> stringList2 = new ArrayList<>(Arrays.asList(strings));
     stringList2.add("ijk");
     System.out.println(stringList2);

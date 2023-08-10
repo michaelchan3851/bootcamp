@@ -7,7 +7,9 @@ public class Person implements Player {
   Pocket[] pockets;
 
   public Person() {
-    pockets = new Pocket[] { new Pocket(), new Pocket() };
+    pockets = new Pocket[2];
+    pockets[0] = new Pocket();
+    pockets[1] = new Pocket();
   }
 
   @Override
@@ -25,27 +27,4 @@ public class Person implements Player {
     return this.pockets[1];
   }
 
-
-
-  public static void main(String[] args) {
-    Person p1 = new Person();
-    Player.fillThePocket(p1.getLeftPocket());
-    Player.fillThePocket(p1.getRightPocket());
-    System.out.println(p1.getRightPocket().getSize());// 5
-    System.out.println(p1.getLeftPocket().getSize());// 5
-
-    System.out.println("p1 Total Score:" +p1.totalScore());
-    System.out.println("p1 Left Pocket Ball Details:" +p1.getLeftPocket().toString());
-    System.out.println("p1 Right Pocket Ball Details:" +p1.getRightPocket().toString());
-
-    Person p2 = new Person();
-    Player.fillThePocket(p2.getLeftPocket());
-    Player.fillThePocket(p2.getRightPocket());
-    System.out.println(p2.getRightPocket().getSize());// 5
-    System.out.println(p2.getLeftPocket().getSize());// 5
-
-    
-  
-
-  }
 }

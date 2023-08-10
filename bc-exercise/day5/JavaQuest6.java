@@ -9,7 +9,6 @@ public class JavaQuest6 {
     int a = 1;
     int b = 1;
     int sum;
-    int count = 0;
     for (int i = 0; i < 15; i++) {
       sum = a + b;
       System.out.print(a + " ");

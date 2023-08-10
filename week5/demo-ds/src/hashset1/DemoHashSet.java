@@ -5,8 +5,7 @@ import java.util.HashSet;
 public class DemoHashSet {
 
   public static void main(String[] args) {
-    // HashSet is good at handling
-
+      // Example 1: HashSet is good at handling duplicates
     HashSet<String> strings = new HashSet<>();
     System.out.println(strings.add("abc")); // true
     System.out.println(strings.add("def")); // true
@@ -27,14 +26,14 @@ public class DemoHashSet {
     HashSet<Coordinate> coordinates = new HashSet<>();
     Coordinate c1 = new Coordinate(1, 1);
     Coordinate c2 = new Coordinate(1, 1);
+    // c1.equals(c2)
     System.out.println(coordinates.add(c1)); // true
     System.out.println(coordinates.add(c2)); // false, Coodintate equals() return true
-    // hashset add() -> coordinate c2.equals(any of coordinate in hashset) return
-    // true
-    // -> c2.equals(c1) -> diff address -> true
+    // hashset add() -> coordinate c2.equals(any of coordinate in hashset) return true
+    // -> c2.equals(c1) -> true
     // -> HashSet not allow duplicates
     // -> return false
-    System.out.println(coordinates.size()); // 2
+    System.out.println(coordinates.size()); // 1
     // call your equals method to compare
     // is it duplicate is depends on you
 

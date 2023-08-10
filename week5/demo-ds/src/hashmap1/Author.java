@@ -18,7 +18,7 @@ public class Author {
     if(!(o instanceof Author))
     return false;
     Author author = (Author) o;
-    return author.name.equals(this.name );
+    return author.name.equals(this.name);
   }
 
   @Override 

@@ -22,7 +22,7 @@ public class Ball {
 
   public static Ball random() {
     // Get Random Color
-    int random = new Random().nextInt(3);
+    int random = new Random().nextInt(3); // return 0, 1, 2
     Color color = Color.getColor(random);
     return new Ball(color);
 
@@ -48,7 +48,9 @@ public class Ball {
   public String toString() {
     return this.color + "["
         + this.id +
-        "]" + "Score=" + this.color.getScore();
+        ",color=" + this.color.name() +
+        "]";
+
   }
 
 }

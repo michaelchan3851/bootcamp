@@ -5,7 +5,6 @@ public enum Color {
   ;
 
   private int score;
-  private int id;
 
   private Color(int score) {
     this.score = score;

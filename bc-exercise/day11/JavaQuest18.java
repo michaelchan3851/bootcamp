@@ -6,7 +6,6 @@
  *  If there is no such string, return an empty string "".
  * A string is palindromic if it reads the same forward and backward.
  *  words[i] consists only of lowercase English letters.*/
-import java.util.Arrays;
 
 public class JavaQuest18 {
   public static void main(String[] args) {

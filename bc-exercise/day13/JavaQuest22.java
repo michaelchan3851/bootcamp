@@ -16,8 +16,6 @@ Sum of digits = 4 + 5 + 6 + 8 = 23
 Result = 960 - 23 = 937
 */
 
-import java.util.Arrays;
-
 public class JavaQuest22 {
   public static void main(String[] args) {
     System.out.println(findDifferent(1)); // output : 0
@@ -31,9 +29,9 @@ public class JavaQuest22 {
   public static int findDifferent(int n) {
     // code here
     int[] arr = new int[String.valueOf(n).length()];
-    int index = 0;
+    int idx = 0;
     while (n > 0) {
-      arr[index++] = n % 10;
+      arr[idx++] = n % 10;
       n /= 10;
     }
     int product = 1;

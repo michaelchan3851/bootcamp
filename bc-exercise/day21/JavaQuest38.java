@@ -19,8 +19,6 @@
  * 
  * n == nums.length, 1 <= n <= 1000, 1 <= nums[i] <= 1000
  */
-
-import java.util.ArrayList;
 import java.util.Arrays;
 
 public class JavaQuest38 {
@@ -30,9 +28,8 @@ public class JavaQuest38 {
         .println(Arrays.toString(getConcatenation(new int[] { 1, 2, 3, 4 })));// [1, 2, 3, 4, 1, 2, 3, 4]
     System.out
         .println(Arrays.toString(getConcatenation(new int[] { 4, 3, 2, 1 })));// [4, 3, 2, 1, 4, 3, 2, 1]
-
   }
-
+  
   public static int[] getConcatenation(int[] nums) {
     int[] ans = new int[nums.length * 2];
     for (int i = 0; i < nums.length; i++) {

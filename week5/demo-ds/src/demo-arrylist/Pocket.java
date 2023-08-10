@@ -32,7 +32,7 @@ public class Pocket {
     for (Ball b : this.balls) {
       if (b.getId() == ballId) { // primitive ==
         this.balls.remove(b);
-        return; // re
+        return; // remove the first one and return
       }
     }
   }

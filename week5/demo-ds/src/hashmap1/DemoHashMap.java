@@ -15,7 +15,7 @@ public class DemoHashMap {
     System.out.println(map.size()); // 2 entries
     // Map.Entry -> Key + Value
 
-    // if Duplicated (), override the entry
+    // if duplicated (equals(), hashCode()), override
     map.put("abc", "hello world !!!"); // Override the entry with key "abc"
     System.out.println(map.get("abc"));// hello world !!!
     System.out.println(map.size()); // 2 entries
@@ -30,17 +30,17 @@ public class DemoHashMap {
     if (!map.containsKey("abc"))
       return;
 
-      //loop Entries
+    // loop Entries
     for (Map.Entry<String, String> entry : map.entrySet()) {
       System.out.println(entry.getKey() + ":" + entry.getValue());
-    }//no sequence
-    
-    //loop Keys
+    } // no sequence
+
+    // loop Keys
     for (String key : map.keySet()) {
       System.out.println(key);
     }
 
-    //Loop Values
+    // Loop Values
     for (String value : map.values()) {
       System.out.println(value);
     }

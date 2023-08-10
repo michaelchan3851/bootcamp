@@ -40,18 +40,13 @@ public class LinkedList1 {
 
     LinkedList1 head = ll;
     String string = "";
-    while (head.getNode() != null) {
+    while (head.getNode() != null) { //bug
       string += head.getStr();
       head = head.getNode(); //object reference
     }
 
     //LinkedList
-    List<String> l1 = new LinkedList<>();
-    l1.add("abc");
-    l1.add("abc");
-    l1.add("abc");
-
-    List<String> String = new ArrayList<>(); //Poly,Interface
+    List<String> parent = new ArrayList<>(); //Poly,Interface
 
     
   }

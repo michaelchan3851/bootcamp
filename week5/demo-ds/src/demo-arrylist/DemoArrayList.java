@@ -41,7 +41,7 @@ public class DemoArrayList {
 
         // Access elements in ArrayList
         for (int i = 0; i < numbers2.size(); i++) {
-            System.out.println(numbers2.get(i)); // Possible to have IndexOutOfBous
+            System.out.println(numbers2.get(i)); // Possible to have IndexOutOfBound
         }
 
         int original = numbers2.set(2, 100); // unbox
@@ -64,8 +64,7 @@ public class DemoArrayList {
         numbers2.removeAll(numbers3); // 4
         System.out.println(numbers2.size()); // 4
 
-        System.out.println(numbers2.indexOf(1000));
-        // -1
+        System.out.println(numbers2.indexOf(1000));// -1
         System.out.println(numbers2.indexOf(3)); // 1
 
         // Find the last ocurrence of element 4.
