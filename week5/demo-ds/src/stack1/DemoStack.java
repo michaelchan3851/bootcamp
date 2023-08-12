@@ -19,7 +19,7 @@ public class DemoStack {
     stack1.add("ijk");
     stack1.push("fgi");
     stack1.add("ijk");
-    System.out.println(stack1.pop());//ijk
+    //System.out.println(stack1.pop());//ijk
 
 
 
