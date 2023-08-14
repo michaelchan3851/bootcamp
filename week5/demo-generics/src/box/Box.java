@@ -1,5 +1,8 @@
 package box;
+
 import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
 
 public class Box<T extends Number> {
 
@@ -31,9 +34,12 @@ public class Box<T extends Number> {
 
   public static void main(String[] args) {
     // Box<String> box1 = new Box<>();
-    Box<Integer> box1 = new Box<>(100);// compile-time check
+    Box<Number> box1 = new Box<>(100);// compile-time check
     System.out.println(box1.size()); // 1
 
+    //box1 = new Box<>("abc"); //box1 = new Box<>("abc") is not Box<Number>
+
+    Collections.sort(null, null);
   }
 
 }
