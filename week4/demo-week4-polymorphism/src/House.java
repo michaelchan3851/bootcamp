@@ -2,19 +2,18 @@ public class House extends Building {
 
   double capacity;
 
-  public House(){
+  public House() {
 
   }
 
-  public House(double capacity){
+  public House(double capacity) {
     this.capacity = capacity;
   }
-  
+
   public double getCapacity() {
     return this.capacity;
   }
 
-  @Override
   public void print() {
     System.out.println("I am House");
   }
@@ -28,4 +27,8 @@ public class House extends Building {
     super.print2();
   }
 
+  public static void main(String[] args) {
+    Building house = new House(); // I am House
+    house.print();
+  }
 }

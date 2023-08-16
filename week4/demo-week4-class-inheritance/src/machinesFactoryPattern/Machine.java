@@ -59,6 +59,7 @@ public class Machine {
         Machine machine2 = Machine.produce(2); // Laptop
         machine2.stop(); // Laptop Stop...
 
+    
 
     }
 
