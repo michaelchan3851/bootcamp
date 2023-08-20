@@ -60,11 +60,11 @@ public class Demo {
         // 4D Array
         int[][][][] arr4d = new int[1][2][3][4];
 
-        Demo[][] demo = new Demo[2][2];
-        demo[0][0] = new Demo();
-        demo[0][1] = new Demo();
-        demo[1][0] = new Demo();
-        demo[1][1] = new Demo();
+        DemoSwitch[][] demo = new DemoSwitch[2][2];
+        demo[0][0] = new DemoSwitch();
+        demo[0][1] = new DemoSwitch();
+        demo[1][0] = new DemoSwitch();
+        demo[1][1] = new DemoSwitch();
 
         for (int i = 0; i < demo.length; i++) {
             for (int j = 0; j < demo[0].length; j++) {

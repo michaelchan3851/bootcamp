@@ -45,11 +45,29 @@ public class JavaQuest51 {
   }
 
   public static List<List<Integer>> largeGroupPositions(String s) {
-    int [] arr = new int[26];
-    for(int i = 0;i<s.length();i++){
-      arr[s.charAt(i) - 'a']++;
-    }
-    
-  }
+    List<List<Integer>> bigList = new ArrayList<>();
 
+    int count = 0;
+    for (int i = 0; i < s.length() - 1; i++) {
+      if (s.charAt(i) != s.charAt(i + 1)) {
+        if (count >= 2) {
+          List<Integer> list = new ArrayList<>();
+          list.add(i - count);
+          list.add(i);
+          bigList.add(list);
+        }
+        count = 0;
+        continue;
+      } else if (s.charAt(i) == s.charAt(i + 1)) {
+        count++;
+      }
+    }
+    if (count >= 2 ) {
+      List<Integer> list = new ArrayList<>();
+      list.add(s.length() - 1 - count);
+      list.add(s.length() - 1);
+      bigList.add(list);
+    }
+    return bigList;
+  }
 }

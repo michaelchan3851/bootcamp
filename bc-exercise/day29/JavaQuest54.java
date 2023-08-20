@@ -28,10 +28,8 @@ Constraints:
 1 <= nums1[i], nums2[j], nums3[k] <= 100*/
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
 
 public class JavaQuest54 {

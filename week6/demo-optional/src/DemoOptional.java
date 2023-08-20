@@ -1,11 +1,23 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import javax.swing.text.html.Option;
 
 public class DemoOptional {
     public static void main(String[] args) throws Exception{
+
+        //Optional<Book> -> Book -> String
+        Optional<Book> o = getBook();
+        if(!o.isPresent()){
+
+        }
+        o.ifPresent(e -> {
+
+        });
+
+
         List<Book> books = new ArrayList<>();
         books.add(new Book("John"));
         books.add(new Book("Mary"));
