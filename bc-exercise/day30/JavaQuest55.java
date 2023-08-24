@@ -41,11 +41,11 @@ public class JavaQuest55 {
 
   public static boolean divideArray(int[] nums) {
     Set<Integer> set = new HashSet<>();
-    int count = 0;
+    //int count = 0;
 
     for (int num : nums) {
       if (set.contains(num)) {
-        count++;
+        //count++;
         set.remove(num);
       } else {
         set.add(num);

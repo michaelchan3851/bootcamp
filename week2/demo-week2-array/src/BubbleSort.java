@@ -29,6 +29,6 @@ public class BubbleSort {
         }
       }
     }
-    return arr;
+    return arr; // step[1, 2, 4, 5, 8]
   }
 }
