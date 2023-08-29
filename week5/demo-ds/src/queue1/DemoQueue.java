@@ -6,7 +6,7 @@ import java.util.LinkedList;
 
 public class DemoQueue {
   public static void main(String[] args) {
-    Deque<String> queue = new LinkedList<>();
+    LinkedList<String> queue = new LinkedList<>();
     // First In First Out
     queue.add("hello");
     queue.add("world");

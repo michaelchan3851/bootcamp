@@ -13,7 +13,7 @@ public class Demo {
         System.out.println(Direction.EAST.toString()); // EAST
         System.out.println(Direction.NORTH);
 
-        Direction east = Direction.EAST; // TBC (heap)
+        east = Direction.EAST; // TBC (heap)
         System.out.println(east == Direction.NORTH); // false
         System.out.println(east != Direction.NORTH); // true
         // == and != are checking the object reference
