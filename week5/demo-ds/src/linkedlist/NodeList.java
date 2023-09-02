@@ -3,7 +3,7 @@ package linkedlist;
 public class NodeList {
 
   Node head;
-`
+  
   public NodeList(Node head) {
     this.head = head;
   }

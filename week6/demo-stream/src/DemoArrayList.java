@@ -66,7 +66,7 @@ public class DemoArrayList {
                 // Stream can only terminate once,
                 // but it may have multiple interminate operations
 
-                List<Person> persons = Arrays.asList(new Person("John", 30), new Person("Mary", 25));
+                List<Persons> persons = Arrays.asList(new Persons("John", 30), new Persons("Mary", 25));
                 // stream -> get all the names from persons
                 persons.stream()
                                 .map(s -> s.name)
@@ -127,7 +127,7 @@ public class DemoArrayList {
                 .forEach(e -> System.out.println(e));
         }
 
-        public static boolean find(List<Person> persons) {
+        public static boolean find(List<Persons> persons) {
                 return persons.stream() // stream<>
                                 .filter(e -> e.isElderly()) // Stream<Person> -> if else
                                 .findFirst() // Optional<Person>
