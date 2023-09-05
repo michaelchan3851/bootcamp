@@ -49,7 +49,11 @@ class AppTest {
     assertNull(str);
   }
 
-
+  @Test
+  void testAssertNotNull(){
+    Student student = new Student();
+    assertNotNull(student.getSubjects());
+  }
 
 
   public static void main(String[] args) {
