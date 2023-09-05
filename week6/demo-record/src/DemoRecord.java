@@ -4,7 +4,7 @@ import java.util.Set;
 public class DemoRecord {
 
     public static void main(String[] args) {
-        Person person = new Person("John", 30);
+        Person2 person = new Person2("John", 30);
 
         Person1 person1 = new Person1("John", 30);
         Person1 anotherPerson = new Person1("John", 30);

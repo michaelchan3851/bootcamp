@@ -45,5 +45,4 @@ public class Company {
 
     company.getStaffName(1); // "John"
   }
-
 }

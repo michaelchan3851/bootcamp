@@ -46,8 +46,6 @@ public class Superman implements Flyable {
 
   public static double add(double a, double b) {
     return BigDecimal.valueOf(a).add(BigDecimal.valueOf(b)).doubleValue();
+    
   }
-
-
-  
 }

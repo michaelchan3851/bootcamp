@@ -8,21 +8,21 @@ public class OptionalDemo {
     addresses.add("Hong Kong");
     addresses.add("Mainland");
     addresses.add("Japan");
-    Person p1 = new Person("Ann Chan", addresses);
+    Person4 p1 = new Person4("Ann Chan", addresses);
 
     List<String> addresses2 = new ArrayList<>();
     addresses2.add("Hong Kong");
     addresses2.add("Taiwan");
     addresses2.add("US");
-    Person p2 = new Person("Betty Chen", addresses2);
+    Person4 p2 = new Person4("Betty Chen", addresses2);
 
-    List<Person> persons = new ArrayList<>();
+    List<Person4> persons = new ArrayList<>();
     persons.add(p1);
     persons.add(p2);
     System.out.println(getFromDb(persons, "Chan")); // true
     System.out.println(getFromDb(persons, "Lau")); // false
 
-    Optional<Person> result = getFromDb2(persons, "Chan");
+    Optional<Person4> result = getFromDb2(persons, "Chan");
     result.ifPresent(person -> {
       // System.out.println(p.getName);
       person.getAddresses().stream()
@@ -32,7 +32,7 @@ public class OptionalDemo {
     });
   }
 
-  public static Optional<Person> getFromDb2(List<Person> persons //
+  public static Optional<Person4> getFromDb2(List<Person4> persons //
       , String lastName) {
     return persons.stream()//
         .filter(p -> p.getName().endsWith(lastName)) // Stream
@@ -40,7 +40,7 @@ public class OptionalDemo {
     ;
   }
 
-  public static boolean getFromDb(List<Person> persons //
+  public static boolean getFromDb(List<Person4> persons //
       , String lastName) {
     return persons.stream()//
         .filter(p -> p.getName().endsWith(lastName)) // Stream

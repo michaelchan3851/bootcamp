@@ -60,8 +60,6 @@ public class Demo {
                 .map(e -> e.length()) // convert string to int
                 .filter(e -> e < 5)
                 .collect(Collectors.toList());
+                
     }
-
-    
-
 }
