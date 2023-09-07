@@ -1,23 +1,23 @@
-public class Big2 extends CardRule{
+// public class Big2 extends CardRule{
   
-  @Override
-  Player determineWinner();
+//   @Override
+//   Player determineWinner();
 
-  @Override
-  void compare();
+//   @Override
+//   void compare();
 
-  @Override
-  void DealCards();
+//   @Override
+//   void DealCards();
 
-  @Override
-  void shuffleDeck();
+//   @Override
+//   void shuffleDeck();
 
-  @Override
-  boolean isGameOver();
+//   @Override
+//   boolean isGameOver();
 
-  @Override
-  void reset();
-}
+//   @Override
+//   void reset();
+// }
 
   
 

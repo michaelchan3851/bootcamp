@@ -1,2 +1,4 @@
 /Users/hohinchan/github/java/bootcamp/week9/demo-junit/src/test/java/com/bootcamp/week9/PerClassTest.java
-/Users/hohinchan/github/java/bootcamp/week9/demo-junit/src/test/java/com/bootcamp/week9/AppTest.java
+/Users/hohinchan/github/java/bootcamp/week9/demo-junit/src/test/java/com/bootcamp/week9/AssertTest.java
+/Users/hohinchan/github/java/bootcamp/week9/demo-junit/src/test/java/com/bootcamp/week9/BeforeAfterTest.java
+/Users/hohinchan/github/java/bootcamp/week9/demo-junit/src/test/java/com/bootcamp/week9/BeforeAllAfterAllTest.java

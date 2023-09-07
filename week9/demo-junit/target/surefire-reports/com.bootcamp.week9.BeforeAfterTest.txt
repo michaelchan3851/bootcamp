@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
-Test set: com.bootcamp.week9.AppTest
+Test set: com.bootcamp.week9.BeforeAfterTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.051 s -- in com.bootcamp.week9.AppTest
+Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.038 s -- in com.bootcamp.week9.BeforeAfterTest
